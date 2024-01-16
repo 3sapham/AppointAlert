@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Notifikasjoner">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:key="sms_varsling"
+            android:summary="Tillat SMS-varsling og notifikasjoner"
+            android:title="Varslinger" />
+
+        <EditTextPreference
+            android:defaultValue="06:00"
+            android:key="sms_tid"
+            android:summary="Sett tiden det skal sendes en sms"
+            android:title="SMS tidspunkt"
+            app:icon="@android:drawable/ic_menu_recent_history" />
+
+        <EditTextPreference
+            android:defaultValue="Husk avtalen idag!"
+            android:key="sms_melding"
+            android:summary="Sett sms meldingen"
+            android:title="SMS melding"
+            app:icon="@android:drawable/stat_notify_chat" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

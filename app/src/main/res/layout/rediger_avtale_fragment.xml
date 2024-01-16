@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rediger avtale"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:gravity="center">
+
+        <DatePicker
+            android:id="@+id/nyDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+        <TimePicker
+            android:id="@+id/nyTimePicker"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginVertical="10dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tittel"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/nyTittel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginVertical="10dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Treffsted"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/nyTreffsted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/nyVennerDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginVertical="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp" >
+        <Button
+            android:id="@+id/lagre"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Lagre"
+            app:icon="@android:drawable/ic_menu_save"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/orange" />
+        <Button
+            android:id="@+id/avbryt"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Avbryt"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_marginHorizontal="10dp"/>
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/slett"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:text="Slett"
+        android:textColor="@color/red"
+        app:icon="@android:drawable/ic_menu_delete"
+        app:iconTint="@color/red" />
+
+</LinearLayout>
